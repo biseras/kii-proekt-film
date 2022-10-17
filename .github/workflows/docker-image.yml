@@ -19,20 +19,20 @@ jobs:
             
         - name: Build backend image
           run: |
-            docker build -t biseras/film ./filmkii
+            docker build -t biseras/film ./film
             
         - name: Docker database tag
           run: |
-            docker tag biseras/mongo biseras/mongo
+            docker tag biseras/mongodatabase biseras/mongodatabase
             
         - name: Docker backend tag
           run: |
-            docker tag biseras/filmm biseras/filmkii
+            docker tag biseras/film biseras/film
         
         - name: Docker push database image
           run: |
-            docker push biseras/mongo
+            docker push biseras/mongodatabase
         
         - name: Docker push backend image
           run: |
-            docker push biseras/filmkii
+            docker push biseras/film
