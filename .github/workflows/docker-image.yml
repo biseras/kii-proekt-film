@@ -23,7 +23,7 @@ jobs:
             
         - name: Docker database tag
           run: |
-            docker tag biseras/mongodatabase biseras/mongodatabase
+            docker tag biseras/mongo biseras/mongo
             
         - name: Docker backend tag
           run: |
@@ -31,7 +31,7 @@ jobs:
         
         - name: Docker push database image
           run: |
-            docker push biseras/mongodatabase
+            docker push biseras/mongo
         
         - name: Docker push backend image
           run: |
