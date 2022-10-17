@@ -19,7 +19,7 @@ jobs:
             
         - name: Build backend image
           run: |
-            docker build -t biseras/film ./filmm
+            docker build -t biseras/film ./filmkii
             
         - name: Docker database tag
           run: |
@@ -27,7 +27,7 @@ jobs:
             
         - name: Docker backend tag
           run: |
-            docker tag biseras/filmm biseras/filmm
+            docker tag biseras/filmm biseras/filmkii
         
         - name: Docker push database image
           run: |
@@ -35,4 +35,4 @@ jobs:
         
         - name: Docker push backend image
           run: |
-            docker push biseras/filmm
+            docker push biseras/filmkii
